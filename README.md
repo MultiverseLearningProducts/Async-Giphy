@@ -94,6 +94,7 @@ You now have the power of the entire Giphy library, the opportunities are endles
         await getImage("dogs");
     }
     ```
+> We have not learned about web servers yet so `.env` variables will not work for this part. Simply don't commit your API Key to GitHub for now. You can research how to incorporate secrets, but it is far outside the scope of this practice!
 3. Create a user interface. One possible way you can do this:
     - Create `index.html` and `style.css` files.
     - Create and style a button.
