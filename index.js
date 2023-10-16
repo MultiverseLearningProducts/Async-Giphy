@@ -19,12 +19,11 @@ const handleSubmit = async (event) => {
         <div>
     `;
   } else {
-    container.innerHTML = gifs.data.map(
-      (gif) => `
-        <img class="gif" src=${gif.images.original.url} />
-    `
-    );
+    container.innerHTML = gifs.data
+      .map((gif) => {
+        return `<img class="gif" src=${gif.images.original.url} />`;
+      })
+      .join("");
   }
 };
-
 input.addEventListener("change", (event) => handleSubmit(event));
